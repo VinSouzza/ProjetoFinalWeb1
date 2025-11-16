@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cadastro Postal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cadastro Postal</h1>
+
+    <form id="postalForm" class="form-cadastro" autocomplete="off">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="nome">Nome Completo *</label>
+          <input type="text" id="nome" name="nome" maxlength="100" placeholder="Digite seu nome completo" required>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Empresa (opcional)</label>
+          <input type="text" id="empresa" name="empresa" maxlength="80" placeholder="Nome da empresa">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">E-mail *</label>
+          <input type="email" id="email" name="email" maxlength="80" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone *</label>
+          <input type="text" id="telefone" name="telefone" maxlength="15" placeholder="(16) 99112-1744" required
+                 oninput="this.value = mascaraTelefone(this.value)">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="tipo">Tipo de endereço *</label>
+          <select id="tipo" name="tipo" required>
+            <option value="residencial">Residencial</option>
+            <option value="comercial">Comercial</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pais">País *</label>
+          <input type="text" id="pais" name="pais" maxlength="40" placeholder="Brasil" value="Brasil" required>
+        </div>
+      </div>
+
+      <h2>Endereço</h2>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="cep">CEP *</label>
+          <input type="text" id="cep" name="cep" maxlength="9" placeholder="14412-166" required
+                 oninput="this.value = mascaraCEP(this.value)">
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade *</label>
+          <input type="text" id="cidade" name="cidade" maxlength="60" placeholder="Cidade" required>
+        </div>
+        <div class="form-group small">
+          <label for="estado">Estado (UF) *</label>
+          <input type="text" id="estado" name="estado" maxlength="2" placeholder="UF" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="logradouro">Logradouro *</label>
+          <input type="text" id="logradouro" name="logradouro" maxlength="120" placeholder="Rua, Avenida..." required>
+        </div>
+        <div class="form-group small">
+          <label for="numero">Número *</label>
+          <input type="text" id="numero" name="numero" maxlength="8" placeholder="123" required>
+        </div>
+        <div class="form-group small">
+          <label for="complemento">Complemento</label>
+          <input type="text" id="complemento" name="complemento" maxlength="40" placeholder="Apto, bloco...">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="bairro">Bairro *</label>
+        <input type="text" id="bairro" name="bairro" maxlength="60" placeholder="Bairro" required>
+      </div>
+
+      <div class="botoes">
+        <button type="submit" class="btn-salvar">Salvar</button>
+        <button type="reset" class="btn-limpar">Limpar</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>

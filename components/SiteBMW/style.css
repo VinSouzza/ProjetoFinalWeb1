@@ -1,0 +1,167 @@
+/* Scoped SiteBMW styles - apply only inside #siteBmw container */
+
+#siteBmw {
+  --bg: #0c0d10;
+  --bg-alt: #12141a;
+  --card: #171922;
+  --text: #e9ecf1;
+  --muted: #a9b1c1;
+  --brand: #3aa0ff;
+  --brand-2: #7cc2ff;
+  --border: #232737;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --radius: 14px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: var(--text);
+  background: linear-gradient(180deg, #0b0c10 0%, #0e1016 100%);
+  line-height: 1.6;
+}
+
+#siteBmw *, #siteBmw *::before, #siteBmw *::after { box-sizing: inherit; }
+
+#siteBmw .container{
+  width: 1100px; /* largura fixa */
+  margin: 0 auto;
+}
+
+#siteBmw .site-header{
+  position: sticky; top:0; z-index: 10;
+  backdrop-filter: blur(8px);
+  background: rgba(12,13,16,.55);
+  border-bottom: 1px solid var(--border);
+}
+
+#siteBmw .header-inner{
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 0;
+}
+
+#siteBmw .logo{
+  color: var(--text); text-decoration: none; font-weight: 800; letter-spacing: .5px;
+  font-size: 20px;
+}
+
+#siteBmw .nav a{
+  color: var(--muted); text-decoration: none; margin-left: 18px; font-weight: 600;
+}
+
+#siteBmw .nav a:hover{ color: var(--brand); }
+
+#siteBmw .hero{
+  min-height: 620px; /* fixo ao invés de vh */
+  display: flex; align-items: center;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(10,11,14,.6), rgba(10,11,14,.85));
+}
+
+#siteBmw .hero h1{
+  font-size: 50px; /* fixo */
+  margin: 0 0 8px 0;
+}
+
+#siteBmw .hero p{
+  color: var(--muted);
+  font-size: 18px; /* fixo */
+  margin: 0 0 22px 0;
+}
+
+#siteBmw .hero-image img{
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+#siteBmw .btn{
+  display: inline-block;
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+  color: #05101a; font-weight: 800; text-decoration: none;
+  padding: 12px 18px; border-radius: 999px; box-shadow: var(--shadow);
+}
+
+#siteBmw .section{
+  padding: 64px 0;
+}
+
+#siteBmw .section.alt{
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+#siteBmw .section h2{
+  font-size: 30px; /* fixo */
+  margin: 0 0 6px 0;
+}
+
+#siteBmw .section-subtitle{
+  color: var(--muted); margin: 0 0 24px 0;
+}
+
+#siteBmw .grid{
+  display: grid; gap: 18px;
+}
+
+#siteBmw .gallery{
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#siteBmw .gallery .card{
+  grid-column: span 6;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+#siteBmw .gallery .card img{
+  width: 100%; height: 220px; object-fit: cover; display: block;
+  background: #0b0d12;
+}
+
+#siteBmw .split{
+  display: grid; gap: 26px; grid-template-columns: 1.2fr .8fr;
+}
+
+#siteBmw .note{
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px;
+}
+
+#siteBmw .note h3{
+  margin: 0 0 8px 0; font-size: 18px;
+}
+
+#siteBmw .note ul{ margin: 0; padding-left: 18px; }
+#siteBmw .note li{ margin: 6px 0; color: var(--muted); }
+
+#siteBmw .stats{
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#siteBmw .stat{
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 14px; min-height: 100px;
+  display: flex; flex-direction: column; justify-content: center;
+}
+
+#siteBmw .stat-label{ color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .8px; }
+#siteBmw .stat-value{ font-size: 18px; font-weight: 800; margin-top: 6px; }
+
+#siteBmw .spec-grid{
+  display: grid; gap: 18px; margin-top: 28px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#siteBmw .spec-grid h3{ margin: 0 0 8px 0; font-size: 18px; }
+#siteBmw .spec-grid ul{ margin: 0; padding-left: 18px; }
+#siteBmw .spec-grid li{ margin: 6px 0; color: var(--muted); }
+
+#siteBmw .site-footer{
+  border-top: 1px solid var(--border);
+  background: #0b0d12;
+}
+
+#siteBmw .footer-inner{ padding: 22px 0; color: var(--muted); font-size: 14px; display: flex; justify-content: space-between;}

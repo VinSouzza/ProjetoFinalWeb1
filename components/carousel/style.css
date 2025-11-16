@@ -1,0 +1,111 @@
+/* Scoped carousel styles: only affect elements inside .carrousel-bmw */
+
+.carrousel-bmw {
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 0;
+}
+
+.carrousel-bmw .carousel-header {
+  background-color: #111;
+  color: #00aaff;
+  text-align: center;
+  padding: 20px 0;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.carrousel-bmw .carousel-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carrousel-bmw .carousel-item {
+  display: none;
+  text-align: center;
+}
+
+.carrousel-bmw .carousel-item.active {
+  display: block;
+}
+
+.carrousel-bmw .carousel-item img {
+  max-width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(85%);
+  border-radius: 25px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 0 25px rgba(0, 170, 255, 0.3);
+}
+
+.carrousel-bmw .carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 16px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.carrousel-bmw .carousel-caption h5 {
+  color: #00aaff;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.carrousel-bmw .carousel-caption p {
+  color: #ccc;
+  margin: 0;
+}
+
+.carrousel-bmw .carousel-indicators {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px 0 0;
+}
+
+.carrousel-bmw .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0,170,255,0.5);
+  border: none;
+  cursor: pointer;
+}
+
+.carrousel-bmw .carousel-indicators button.active {
+  background: #00aaff;
+}
+
+.carrousel-bmw .carousel-control-prev,
+.carrousel-bmw .carousel-control-next {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 12px;
+}
+
+.carrousel-bmw .carousel-control-prev { left: 8px; }
+.carrousel-bmw .carousel-control-next { right: 8px; }
+
+.carrousel-bmw .carousel-footer {
+  background-color: #111;
+  color: #777;
+  text-align: center;
+  padding: 12px 0;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.carrousel-bmw #bmwCarousel { margin-top: 20px; margin-bottom: 20px; }

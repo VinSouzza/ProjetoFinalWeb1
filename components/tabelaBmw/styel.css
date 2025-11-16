@@ -1,0 +1,159 @@
+/* Escopo isolado da Tabela BMW */
+.TabelaBmw * {
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Área do componente */
+.TabelaBmw {
+  background: linear-gradient(180deg, #0b1730, #071029);
+  color: #bfcfdf;
+  width: 100%;
+  min-height: 100vh; /* Garantir altura total */
+  padding: 0;
+  margin: 0;
+}
+
+/* HEADER */
+.TabelaBmw .header {
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TabelaBmw .brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.TabelaBmw .logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff 0 30%, #1e61d6 100%);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+}
+
+.TabelaBmw .header h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+/* MAIN */
+.TabelaBmw .main {
+  max-width: 1200px;
+  margin: 18px auto;
+  padding: 10px;
+}
+
+.TabelaBmw .card {
+  background: linear-gradient(180deg, #0f2346, rgba(15, 35, 70, 0.85));
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(3, 8, 20, 0.6);
+}
+
+/* CONTROLS */
+.TabelaBmw .controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.TabelaBmw .controls input[type="search"] {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.04);
+  color: #bfcfdf;
+}
+
+.TabelaBmw .controls select {
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  color: #bfcfdf;
+  cursor: pointer;
+}
+
+/* TABLE */
+.TabelaBmw .table-wrap {
+  overflow: auto;
+  border-radius: 8px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+}
+
+.TabelaBmw table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.TabelaBmw th,
+.TabelaBmw td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  text-align: left;
+  color: #bfcfdf;
+}
+
+.TabelaBmw th {
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+  color: #e6f0ff;
+}
+
+.TabelaBmw tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* PAGINAÇÃO */
+.TabelaBmw .pager {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.TabelaBmw .info {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.TabelaBmw .pager-controls button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  color: #bfcfdf;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.TabelaBmw .footer {
+  max-width: 1200px;
+  margin: 18px auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 13px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 760px) {
+  .TabelaBmw .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .TabelaBmw table {
+    min-width: 700px;
+  }
+}

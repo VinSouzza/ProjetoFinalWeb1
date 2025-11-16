@@ -1,0 +1,52 @@
+.container {
+    border: 3px solid grey;
+    height: auto;
+    width: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+#mmmhome {
+    /* background-color: aqua; */
+    /* border: 1px solid black; */
+    height: 97vh;
+    width: 98vw;
+
+}
+
+#abertura {
+    border: 3px solid blue;
+    height: auto;
+    width: auto;
+    margin: 5px;
+
+}
+
+.imgAbertura {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.map-container {
+  width: 90%;              /* ocupa boa parte da tela */
+  max-width: 700px;        /* limite elegante */
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  
+  margin: 0 auto;          /* <-- CENTRALIZA NO COMPONENTE */
+  
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

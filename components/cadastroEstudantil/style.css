@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.cadastro-estudantil-root * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.cadastro-estudantil-root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 10px;
+}
+
+.cadastro-estudantil-root .container {
+    background: #fff;
+    width: 95%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+    height: auto;
+}
+
+.cadastro-estudantil-root h1 {
+  text-align: center;
+  color: #1e4eff;
+  margin-bottom: 25px;
+}
+
+.cadastro-estudantil-root h2 {
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 5px solid #1e4eff;
+  padding-left: 8px;
+  font-size: 1.1rem;
+}
+
+.cadastro-estudantil-root .form-cadastro {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cadastro-estudantil-root .form-row {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.cadastro-estudantil-root .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-estudantil-root .form-group.small {
+  flex: 0.5;
+}
+
+.cadastro-estudantil-root label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.cadastro-estudantil-root input,
+.cadastro-estudantil-root select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s;
+}
+
+.cadastro-estudantil-root input:focus,
+.cadastro-estudantil-root select:focus {
+  border-color: #1e4eff;
+  outline: none;
+}
+
+.cadastro-estudantil-root .botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.cadastro-estudantil-root button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cadastro-estudantil-root .btn-salvar {
+  background-color: #1e4eff;
+  color: white;
+}
+
+.cadastro-estudantil-root .btn-salvar:hover {
+  background-color: #163bcc;
+}
+
+.cadastro-estudantil-root .btn-limpar {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.cadastro-estudantil-root .btn-limpar:hover {
+  background-color: #ddd;
+}
